@@ -1,18 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // ===== Hamburger Menu =====
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    // Close menu when a mobile link is clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+  }
+
+  // ===== Menu Filter / Shuffle =====
   const filterBtns = document.querySelectorAll('.filter-btn');
   const menuItems = document.querySelectorAll('.menu-item');
-  const menuGrid = document.getElementById('menu-grid');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Remove active class from all buttons
       filterBtns.forEach(b => b.classList.remove('active'));
-      // Add active class to clicked button
       btn.classList.add('active');
 
       const filterValue = btn.getAttribute('data-filter');
 
-      // Shuffle animation logic
       menuItems.forEach(item => {
         item.classList.remove('shuffle-in');
         item.classList.add('shuffle-out');
@@ -22,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         menuItems.forEach(item => {
           if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
             item.classList.remove('hidden');
-            // Small delay to allow display block to apply before animation
             setTimeout(() => {
               item.classList.remove('shuffle-out');
               item.classList.add('shuffle-in');
@@ -31,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.add('hidden');
           }
         });
-      }, 400); // Matches CSS transition time
+      }, 400);
     });
   });
 });
