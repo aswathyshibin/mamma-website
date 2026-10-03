@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamma Lidia Café | The Cups of Joy</title>
+    <meta name="description" content="Welcome to Mamma Lidia Café. Experience the cups of joy with our premium Indian chai, lime soda, and artisan snacks.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Logo Image placeholder. Please save your logo image as logo.png in the public folder -->
+        <a href="#home" class="logo">
+          <img src="/logo.png" alt="Mamma Lidia Café Logo" class="nav-logo" />
+          <div class="logo-title">
+            <span class="title-main">Mamma Lidia Café</span>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#location">Location</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Experience<br><span>The Cups of Joy</span></h1>
+        <p class="hero-subtitle">Authentic Indian Chai, refreshing Lime Soda, and crispy snacks waiting just for you.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn-primary">Explore Menu</a>
+          <a href="#location" class="btn-secondary">Visit Us</a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="blob-shape"></div>
+        <img src="/chai.jpg" alt="Masala Chai" class="hero-img float-anim" />
+      </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="section-header">
+        <h2>Our Menu</h2>
+        <p>Crafted with love and traditional recipes.</p>
+      </div>
+
+      <!-- Filter/Shuffle Controls -->
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tea">Tea</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="hot-drinks">Hot Drinks</button>
+        <button class="filter-btn" data-filter="snacks">Snacks</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="cold-drinks">Cold Drinks</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menu-grid">
+        <div class="menu-item" data-category="tea">
+          <div class="menu-img-wrap">
+            <img src="/chai.jpg" alt="Tea" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Tea</h3>
+            <span class="price">₹15.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="tea">
+          <div class="menu-img-wrap">
+            <img src="/chai.jpg" alt="Black Tea" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Black Tea</h3>
+            <span class="price">₹12.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="tea">
+          <div class="menu-img-wrap">
+            <img src="/chai.jpg" alt="Lime Tea" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Lime Tea</h3>
+            <span class="price">₹15.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="tea">
+          <div class="menu-img-wrap">
+            <img src="/chai.jpg" alt="Masala Tea" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Masala Tea</h3>
+            <span class="price">₹20.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="tea">
+          <div class="menu-img-wrap">
+            <img src="/chai.jpg" alt="Ginger Tea" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Ginger Tea</h3>
+            <span class="price">₹20.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="tea">
+          <div class="menu-img-wrap">
+            <img src="/chai.jpg" alt="Cardamom Tea" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Cardamom Tea</h3>
+            <span class="price">₹20.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="tea">
+          <div class="menu-img-wrap">
+            <img src="/chai.jpg" alt="Ginger Tea (Black)" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Ginger Tea (Black)</h3>
+            <span class="price">₹15.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-img-wrap">
+            <img src="/coffee.jpg" alt="Coffee" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Coffee</h3>
+            <span class="price">₹20.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-img-wrap">
+            <img src="/coffee.jpg" alt="Black Coffee" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Black Coffee</h3>
+            <span class="price">₹12.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-img-wrap">
+            <img src="/coffee.jpg" alt="Chukku Kappi" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Chukku Kappi</h3>
+            <span class="price">₹15.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="hot-drinks">
+          <div class="menu-img-wrap">
+            <img src="/coffee.jpg" alt="Boost" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Boost</h3>
+            <span class="price">₹30.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="hot-drinks">
+          <div class="menu-img-wrap">
+            <img src="/coffee.jpg" alt="Horlicks" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Horlicks</h3>
+            <span class="price">₹30.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="snacks">
+          <div class="menu-img-wrap">
+            <img src="/pazhampori.png" alt="Pazhampori" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Pazhampori</h3>
+            <span class="price">₹15.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="snacks">
+          <div class="menu-img-wrap">
+            <img src="/masalabonda.png" alt="Masala Bonda" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Masala Bonda</h3>
+            <span class="price">₹15.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="snacks">
+          <div class="menu-img-wrap">
+            <img src="/parippuvada.png" alt="Parippuvada" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Parippuvada</h3>
+            <span class="price">₹15.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="snacks">
+          <div class="menu-img-wrap">
+            <img src="/mulakuvada.png" alt="Mulaku Vada" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Mulaku Vada</h3>
+            <span class="price">₹15.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="snacks">
+          <div class="menu-img-wrap">
+            <img src="/mulakubajji.png" alt="Mulaku Bajji" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Mulaku Bajji</h3>
+            <span class="price">₹15.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="food">
+          <div class="menu-img-wrap">
+            <img src="/pathiri.png" alt="Pathiri" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Pathiri</h3>
+            <span class="price">₹15.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="food">
+          <div class="menu-img-wrap">
+            <img src="/omlet%20single.png" alt="Omlet Single" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Omlet Single</h3>
+            <span class="price">₹20.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="food">
+          <div class="menu-img-wrap">
+            <img src="/omlet%20double.png" alt="Omlet Double" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Omlet Double</h3>
+            <span class="price">₹40.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="food">
+          <div class="menu-img-wrap">
+            <img src="/idiyappam.png" alt="Idiyappam" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Idiyappam</h3>
+            <span class="price">₹10.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="food">
+          <div class="menu-img-wrap">
+            <img src="/velleppam.png" alt="Velleppam" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Velleppam</h3>
+            <span class="price">₹10.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="food">
+          <div class="menu-img-wrap">
+            <img src="/chappathi.png" alt="Chappathy" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Chappathy</h3>
+            <span class="price">₹5.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="cold-drinks">
+          <div class="menu-img-wrap">
+            <img src="/lime.jpg" alt="Uppu Soda" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Uppu Soda</h3>
+            <span class="price">₹20.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="cold-drinks">
+          <div class="menu-img-wrap">
+            <img src="/lime.jpg" alt="Fresh Lime" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Fresh Lime</h3>
+            <span class="price">₹20.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="cold-drinks">
+          <div class="menu-img-wrap">
+            <img src="/lime.jpg" alt="Fresh Mint" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Fresh Mint</h3>
+            <span class="price">₹20.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="cold-drinks">
+          <div class="menu-img-wrap">
+            <img src="/lime.jpg" alt="Soda Lime" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Soda Lime</h3>
+            <span class="price">₹25.0</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="cold-drinks">
+          <div class="menu-img-wrap">
+            <img src="/lime.jpg" alt="Soda Mint" />
+            <div class="overlay"><button class="btn-icon">+</button></div>
+          </div>
+          <div class="menu-info">
+            <h3>Soda Mint</h3>
+            <span class="price">₹25.0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+      <div class="section-header">
+        <h2>Find Us Here</h2>
+        <p>Your favorite spot in the city.</p>
+      </div>
+      <div class="location-container">
+        <div class="location-details">
+          <h3>Mamma Lidia Café</h3>
+          <p><strong>Address:</strong> Assisi Shanthi Kendra, Areekkal Rd, near SBI Bank, Karukutty, Angamaly, Keralam 683572</p>
+          <p><strong>Hours:</strong><br>Mon - Fri: 8:00 AM - 10:00 PM<br>Sat - Sun: 9:00 AM - 11:00 PM</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+        </div>
+        <div class="location-map">
+          <iframe 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen="" 
+            aria-hidden="false" 
+            tabindex="0"
+            src="https://maps.google.com/maps?q=Assisi%20Shanthi%20Kendra,%20Karukutty,%20Angamaly,%20Keralam%20683572&t=&z=15&ie=UTF8&iwloc=&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo-container">
+          <img src="/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'" />
+          <h2>MAMMA LIDIA CAFÉ</h2>
+          <p>The Cups of Joy</p>
+        </div>
+        <div class="footer-links">
+          <p>Follow us on Social Media for updates!</p>
+          <p>&copy; 2026 Mamma Lidia Café. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
